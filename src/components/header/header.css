@@ -1,0 +1,36 @@
+.headerTextPart {
+    text-align: center;
+    padding: 64px;
+}
+
+.headerTextPart .container h1 {
+    color: #CCF8FF;
+}
+
+.headerTextPart .container h3 {
+    color: #CCF8FFBF;
+}
+
+.inputToFindPart {
+    height: 64px;
+}
+
+.inputToFindPart .container {
+    display: flex;
+    justify-content: center;
+}
+
+.inputToFind {
+    height: 64px;
+    width: 820px;
+    font-size: 24px;
+    line-height: 21px;
+}
+
+.headerBackground {
+    background: #196B78;
+    position: absolute;
+    width: 100%;
+    height: 290px;
+    z-index: -1;
+}

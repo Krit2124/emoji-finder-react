@@ -1,0 +1,30 @@
+.emojiBox {
+    margin-bottom: 20px;
+    width: 316px;
+    height: 184px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+    border: 2px solid #DEE2E6;
+    border-radius: 4px;
+}
+
+.emojiSymbol {
+    font-size: 48px;
+}
+
+.emojiTitle {
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.emojiKeywords {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}

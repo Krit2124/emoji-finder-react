@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
 import './App.css';
+import EmojiList from './components/emojiList/emojiList';
+import Header from './components/header/header';
+
+import {data} from "./data/emoji.js"
 
 function App() {
+  const [filteredEmoji, setFilteredEmoji] = useState(data);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header filteredEmoji={filteredEmoji} setFilteredEmoji={setFilteredEmoji} data={data}/>
+
+      <main>
+        <EmojiList data={filteredEmoji}/>
+      </main>
     </div>
   );
 }
