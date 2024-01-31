@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './header.css';
 
-function Header({filteredEmoji, setFilteredEmoji, data}) {
+function Header({setFilteredEmoji, data}) {
     const [findWords, setFindWords] = useState("")
 
     const filterByFindWords = () => {

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header filteredEmoji={filteredEmoji} setFilteredEmoji={setFilteredEmoji} data={data}/>
+      <Header setFilteredEmoji={setFilteredEmoji} data={data}/>
 
       <main>
         <EmojiList data={filteredEmoji}/>
